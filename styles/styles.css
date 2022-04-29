@@ -1,0 +1,184 @@
+/*основной цвет текста и телефона #757575*/
+/*основной tecxt #212121*/
+/*основной цвет фона secshen #E5E5E5*/
+/*цвет заголовка в герое h1 #FFFFFF*/
+/*цвет ссілок и кнопок (єл.адеса) #2196F3*/
+/*цвет фона футера и хыда #2F303A*/
+/* цвет серого фона #F5F4FA*/
+/**/
+:root {
+    --primary-text-color: #212121;
+    --text-color: #757575;
+    --accent-text: #2196F3;
+    --herotitle: #FFFFFF;
+    --bgr-color: #FFFFFF;
+
+}
+/*body */
+body {
+    background-color: var(--bgr-color) ;
+    color: var(--primary-text-color);
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.03em;
+}
+.list {
+    list-style: none;
+}
+/*header*/
+.logo {
+    color: var(--accent-text);
+}
+.logo {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+}
+.title {
+    color: var(--primary-text-color);
+}
+.site-nav a {
+    color: var(--primary-text-color);
+    font-family: inherit;  
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+.site-nav a:hover, .site-nav a:focus {
+    color: var(--accent-text);
+}
+.site-nav .header-text {
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+/*main*/
+     /*общее main*/
+.section-title {
+    color: var(--primary-text-color);    
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;    
+}
+.text {
+    color: var(--text-color);
+}
+        /*Hero*/
+.hero {
+    background-color: #2F303A;
+}
+.hero-title {
+    color: var(--herotitle);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+.hero-button {
+    font-family: 'Roboto';
+    font-style: normal;
+    background-color: var(--accent-text);
+    color: var(--herotitle);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;   
+}
+.site-nav .link.current {
+    color: var(--accent-text);
+}
+       
+     /*Advantage*/
+.advantages-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;    
+    text-transform: uppercase;
+}
+.advantages-text {
+    color: var(--text-color);
+    font-size: 14px;
+    line-height: 1.71;
+}   
+
+     /*Team*/
+.team {
+    background-color: #F5F4FA;
+}
+.team-list .title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;    
+}
+.team-list .text {
+    font-size: 16px;
+    line-height: 1.9;
+    text-align: center;    
+}
+
+/*Footer*/
+.footer {
+    background-color: #2F303A;
+}
+.adress {
+    color: var(--herotitle);
+        font-size: 14px;
+        line-height: 1.7;        
+}
+.adress-text {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    line-height: 1.71;
+    text-decoration: none;
+}
+.title-footer {
+    color: var(--herotitle);
+}
+/*PAGE PORTFOLIO*/
+        /*Filter button*/
+
+.list-filter {
+    list-style-type: none;
+}
+.button-list {
+    font-family: 'Roboto';
+    font-style: normal;  
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.7;   
+    text-align: center;
+}
+.list-filter:hover,
+.list-filter:focus {
+    background-color: var(--accent-text);
+    color: var(--herotitle);
+}
+
+       /*Progect*/
+.bloc .title {
+    color: var(--primary-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+.bloc .text {
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 1.88;
+}
