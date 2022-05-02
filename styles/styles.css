@@ -27,20 +27,38 @@ body {
     letter-spacing: 0.03em;
 }
 .list {
+    padding: 0;
+    margin: 0;
     list-style: none;
 }
 /*header*/
-.conteiner {
+.conteiner { 
+    display: flex;
+    align-items: center;
+
     width: 1230px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-    padding-bottom: 94px;    
+    background-color: aqua;  
+}
+.main-div {
+    display: flex;
+    align-items: center;  
+}
+.navigation {
+    display: flex;
+    margin: 0;
+    padding: 0;
 }
 .logo {
+    display: block;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-right: 92px;
+
     color: var(--accent-text);
-}
-.logo {
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
@@ -50,30 +68,39 @@ body {
 .title {
     color: var(--primary-text-color);
 }
-.site-nav {
-    display: flex;
+.site-nav,
+.site-list  {
+    display: flex;    
 }
-.site-nav .item:not(:last-child) {
-    outline: 1px solid blue;
-    margin-right: 50px;
+.site-nav .item:not(:last-child),
+.site-list .item:not(:last-child) {
+      margin-right: 50px;
 }
-.site-nav a { 
+.site-nav a,
+.site-list a { 
     display: block;
     padding-top: 32px;
-    padding-bottom: 32px;
-
+    padding-bottom: 32px; 
+   
     color: var(--primary-text-color);
     font-family: inherit;  
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    text-decoration: none;
+    text-decoration: none; 
 }
 .site-nav a:hover, .site-nav a:focus {
     color: var(--accent-text);
 }
-.site-nav .header-text {
+.site-list a:hover, .site-list a:focus {
+    color: var(--accent-text);
+}
+.site-list {
+    margin-left: auto;
+    list-style: none;
+}
+.site-list .header-text {
     color: var(--text-color);
     font-weight: 500;
     font-size: 14px;
@@ -99,10 +126,7 @@ body {
 .text {
     color: var(--text-color);
 }
-.list {
-    padding: 0;
-    margin: 0;
-}
+
         /*Hero*/
 .hero {
     background-color: #2F303A;
@@ -156,7 +180,6 @@ body {
     text-transform: uppercase;
 }
 .advantages-text {
-    margin-right: 30px;
     margin-left: 0px;
     margin-bottom: 0px;
 
@@ -164,9 +187,17 @@ body {
     font-size: 14px;
     line-height: 1.71;
 }   
-.advantages-list list {
+.advantages-list {
+    display: flex;
+    flex-wrap: nowrap;
     margin-top: 95px;
-    margin-bottom: 0px;
+    margin-bottom: 0px; 
+}
+.advantages-list .item {
+    width: 270px; 
+}
+.advantages-list .item:not(:last-child) {
+        margin-left: 30px;
 }
      /*DO*/
 .section-title {
@@ -220,7 +251,15 @@ body {
         /*Filter button*/
 
 .list-filter {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
     list-style-type: none;
+    margin: 0;
+    background-color: tomato;
+}
+.list-filter .item:not(last-childer) {
+    margin-left: 8px;
 }
 .button-list {
     font-family: 'Roboto';
@@ -238,7 +277,24 @@ body {
 }
 
        /*Progect*/
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: yellow;
+}
+.bloc {
+    width: 370px;
+    height: 398px;
+    margin-top: 29px;
+}
+.bloc:not(last-childer) {
+    margin-left: 30px;
+}
 .bloc .title {
+   margin-top: 20px;
+   margin-right: 29px;
+   margin-left: 19px;
+
     color: var(--primary-text-color);
     font-weight: 700;
     font-size: 18px;
@@ -246,6 +302,10 @@ body {
     letter-spacing: 0.06em;
 }
 .bloc .text {
+    margin-top: 0;
+    margin-right: 29px;
+    margin-left: 19px;
+
     color: var(--text-color);
     font-size: 16px;
     line-height: 1.88;
