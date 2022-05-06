@@ -44,8 +44,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
-    padding-right: 15px;
-    background-color: aqua;  
+    padding-right: 15px;  
 }
 
 /*header*/
@@ -202,13 +201,17 @@ body {
 }
      /*DO*/
 .section.no-padding {
-    padding-top: 0;
+    padding-top: 0;   
 }
 .do-list {
     display: flex;
  }
-.do-list .item:not(:last-child) {
-    margin-left: 30px;
+.do-list .item {
+    display: flex;
+    margin-right: 30px;
+}
+.do-list .item:last-child {
+    margin-right: 0;
 }
 
      /*Team*/
@@ -218,10 +221,11 @@ body {
 .site-nav .team-list {
     margin-top: 0;
     margin-bottom: 0;
+    margin-right: 30px;
     align-items: center;  
 }
-.team-list:not(:last-child) {
-    margin-left: 30px;
+.team-list:last-child {
+    margin-right: 0 auto;
 }
 .team-list .title {
     margin-top: 30px;
@@ -243,11 +247,26 @@ body {
 /*Footer*/
 .footer {
     background-color: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
+.logo-footer {
+    display: block;
+    padding: 0;   
+
+    color: var(--accent-text);
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+}
+
 .adress {
+    margin-top: 20px;
     color: var(--herotitle);
-        font-size: 14px;
-        line-height: 1.7;        
+    font-size: 14px;
+    line-height: 1.7;        
 }
 .adress-text {
     color: rgba(255, 255, 255, 0.6);
@@ -260,19 +279,34 @@ body {
 }
 /*PAGE PORTFOLIO*/
         /*Filter button*/
-
+.main {
+    margin-top: 20px;
+    padding-top: 0;
+    padding-bottom: 186px;
+}
 .list-filter {
     display: flex;
+    align-items: center;
     flex-wrap: nowrap;
     justify-content: center;
     list-style-type: none;
-    margin: 0;
-    background-color: tomato;
+    margin-bottom: 33px;
+    padding: 0;   
 }
-.list-filter .item:not(last-childer) {
-    margin-left: 8px;
+.list-filter .item {
+    margin-right: 8px;
+}
+.list-filter .item:last-childer {
+    margin-right: 0px;
 }
 .button-list {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+    padding-right: 22px;
+    border: none;
+    border-radius: 4px;
+
     font-family: 'Roboto';
     font-style: normal;  
     color: var(--primary-text-color);
@@ -291,7 +325,6 @@ body {
 .project-list {
     display: flex;
     flex-wrap: wrap;
-    background-color: yellow;
 }
 .bloc {
     width: 370px;
