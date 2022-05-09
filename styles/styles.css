@@ -295,6 +295,7 @@ img {
     line-height: 1.7; 
 }
 .adress-mail {
+    display: block;
     margin-bottom: 9px;
     padding: 0;
 
@@ -304,6 +305,8 @@ img {
     text-decoration: none;
 }
 .adress-tel {
+    display: block;
+    margin: 0;
     color: rgba(255, 255, 255, 0.6);
     font-size: 14px;
     line-height: 1.71;
